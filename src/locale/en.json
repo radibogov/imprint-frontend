@@ -1,0 +1,15 @@
+{
+    "en": {
+      "translation": {
+        "main": "main",
+        "auth": "authentication",
+        "blog": "blog",
+        "cases": "cases",
+        "prices": "prices",
+        "download": "download",
+        "updates": "updates",
+        "app": "app",
+        "not_found": "page not found"
+      }
+    }
+  }
