@@ -2,6 +2,7 @@ import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunk from "redux-thunk";
 import { languageReducer } from "./reducers/languageReducer";
 import { composeWithDevTools } from 'redux-devtools-extension';
+import { chatReducer } from "./reducers/chatReducer";
 
 
 
@@ -9,6 +10,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 const rootReducer = combineReducers({
     language: languageReducer,
+    chat: chatReducer,
 })
 
 

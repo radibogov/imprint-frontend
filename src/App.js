@@ -4,11 +4,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { changeLanguage } from './state/reducers/languageReducer';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom'
+import ChatContainer from './app/containers/ChatContainer';
 
 function App() {
   const dispatch = useDispatch()
   const lang = useSelector(state => state.language.language)
-  React.useEffect(()=> {
+  React.useEffect(() => {
     document.querySelector('html').lang = lang;
   }, [lang])
 
@@ -23,6 +24,7 @@ function App() {
       >
         change
       </button>
+      <ChatContainer />
       <MainRouter
         lang={lang}
       />

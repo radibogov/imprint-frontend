@@ -44,7 +44,7 @@ const AuthenticationPage = () => {
     return <Wrapper>
         <AuthForn>
             <FormInner>
-                <TextField autoComplete="off" error={false} id="login" label={i18next.t('login')}  />
+                <TextField autoComplete="off" error={false} id="login" label={i18next.t('login')} />
                 <TextField autoComplete="off" error={false} id="password" label={i18next.t('password')} type="password" />
                 <Button variant="contained" color="primary">
                     {i18next.t('sign_in')}
