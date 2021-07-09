@@ -9,7 +9,10 @@
         "download": "download",
         "updates": "updates",
         "app": "app",
-        "not_found": "page not found"
+        "not_found": "page not found",
+        "login": "Login",
+        "password": "Password",
+        "sign_in": "Sign in"
       }
     }
   }
