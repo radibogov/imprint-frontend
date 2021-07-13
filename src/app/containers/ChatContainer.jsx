@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useDispatch, useSelector } from 'react-redux';
 import Chat from '../components/Chat/Chat'
-import { openChat } from '../../state/reducers/chatReducer';
+import { openChat } from '../../state/reducers/chatOpenReducer';
 
 
 const Wrapper = styled.div`
@@ -11,7 +11,6 @@ bottom: 60px;
 right: 100px;
 width: 400px;
 height: 650px;
-
 `;
 const ChatButton = styled.button`
 position: absolute;
@@ -20,7 +19,7 @@ right: 10px;
 `;
 const ChatContainer = () => {
     const dispatch = useDispatch()
-    const isOpen = useSelector(state => state.chat.isOpen)
+    const isOpen = useSelector(state => state.openChat.isOpen)
 
 
 

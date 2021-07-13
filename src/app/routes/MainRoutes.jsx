@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import i18next from 'i18next'
 import AuthenticationPage from '../pages/AuthenticationPage';
+import SignUpPage from '../pages/SignUpPage';
 
 const MainRouter = ({ lang }) => {
 
@@ -19,7 +20,12 @@ const MainRouter = ({ lang }) => {
             {i18next.t('main')}
         </Route>
         <Route
-            path="/authentication"
+            path="/signup"
+            exact
+            component={SignUpPage}
+        />
+        <Route
+            path="/signin"
             exact
             component={AuthenticationPage}
         />
@@ -43,9 +49,7 @@ const MainRouter = ({ lang }) => {
         </Route>
 
 
-        <Redirect to="/main">
-            страница не найдена
-        </Redirect>
+        <Redirect to="/main"/>
     </Switch>
 }
 
